@@ -67,11 +67,11 @@ constexpr uint32_t kColDim = 0x505050;
 /// Pad colours as 0xRRGGBB.
 constexpr uint32_t kLedP1 = 0x0040FF;
 constexpr uint32_t kLedP2 = 0xFF2000;
-constexpr uint32_t kLedBall = 0xFFFFFF;
+constexpr uint32_t kLedBall = 0xFFC000;
 constexpr uint32_t kLedServe = 0x00A020;
-constexpr uint32_t kLedMenuP1 = 0x000830;
-constexpr uint32_t kLedMenuP2 = 0x300800;
-constexpr uint32_t kLedMenuSelect = 0x003010;
+constexpr uint32_t kLedMenuP1 = 0x001070;
+constexpr uint32_t kLedMenuP2 = 0x701000;
+constexpr uint32_t kLedMenuSelect = 0x006020;
 constexpr uint32_t kLedLevelUp = 0x00FF40;
 constexpr uint32_t kFlashMs = 250;
 constexpr uint32_t kLevelFlashMs = 600;
@@ -476,7 +476,7 @@ void buildCourt(int32_t w, int32_t h) {
 void buildMenu() {
     s_menuBox = lv_obj_create(s_root);
     lv_obj_remove_style_all(s_menuBox);
-    lv_obj_set_size(s_menuBox, 220, 170);
+    lv_obj_set_size(s_menuBox, 220, 180);
     lv_obj_center(s_menuBox);
     lv_obj_set_style_bg_color(s_menuBox, lv_color_hex(0x101820), 0);
     lv_obj_set_style_bg_opa(s_menuBox, LV_OPA_COVER, 0);
@@ -547,7 +547,7 @@ lv_obj_t* lv_CreatePong(lv_obj_t* parent, App* app) {
     }
     s_ledsStale = true;
     s_lastUs = crosspad::getClock().getTimeUs();
-    showStartMenu("Encoder: paddle and menus\nPower: pause");
+    showStartMenu("Turn: paddle   Power: pause");
     drawCourt();
     s_timer = lv_timer_create(tick, kTickMs, nullptr);
     return s_root;

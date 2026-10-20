@@ -46,7 +46,7 @@ Pads, by their printed labels (1 = bottom left, 16 = top right):
   says so and the game goes on.
 
 The pads light the court in 4x4: player 1's paddle in the left column (blue),
-the CPU's or player 2's in the right one (red), the ball white wherever it is,
+the CPU's or player 2's in the right one (red), the ball yellow wherever it is,
 the middle pads blinking green while a serve waits for you; a point flashes
 all of them in the scorer's colour, a level won flashes them green.
 
