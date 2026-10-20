@@ -1,0 +1,23 @@
+{
+  "name": "Pong",
+  "id": "pong",
+  "version": "0.1.0",
+  "description": "Pong against the CPU over nine levels, or two players: encoder and pads as paddles, the pads light the court, square-wave effects; the one app of the pong firmware kit",
+  "category": "games",
+  "icon": "pong.png",
+  "component_path": "components/crosspad-pong",
+  "kits": [
+    "pong"
+  ],
+  "platforms": [
+    "pc",
+    "esp-idf"
+  ],
+  "requires": {
+    "crosspad-core": ">=2.0.0,<3.0.0",
+    "crosspad-gui": ">=2.0.0,<3.0.0"
+  },
+  "changelog": [
+    "0.1.0: Pong as a CrossPad app: 1 player against a CPU over nine levels or 2 players, encoder and pads, pad LEDs as the court, sound effects through the audio module, pause menu with Quit back to the other firmware slot"
+  ]
+}
