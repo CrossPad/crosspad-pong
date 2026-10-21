@@ -1,0 +1,20 @@
+{
+    "name": "crosspad-pong",
+    "version": "0.1.0",
+    "license": "GPL-3.0-or-later",
+    "description": "Pong against the CPU over nine levels, or two players: encoder and pads as paddles, the pads light the court, square-wave effects; the one app of the pong firmware kit",
+    "keywords": [
+        "crosspad",
+        "pong",
+        "game",
+        "paddle",
+        "lvgl"
+    ],
+    "dependencies": {
+        "crosspad-core": ">=2.0.0,<3.0.0",
+        "crosspad-gui": ">=2.0.0,<3.0.0"
+    },
+    "build": {
+        "appLibrary": true
+    }
+}
